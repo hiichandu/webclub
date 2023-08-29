@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Admission Form</title>
+</head>
+<body>
+    <form>
+        <h2>Student Admission Form</h2>
+        <p>Please fill in the following details for admission.</p>
+        <br>
+
+        <!-- Personal Information Section -->
+        <h3>Personal Information</h3>
+        <label>First Name:</label>
+        <input type="text" placeholder="Enter your first name" name="first_name" required><br>
+
+        <label>Last Name:</label>
+        <input type="text" placeholder="Enter your last name" name="last_name" required><br>
+
+        <label>Date of Birth:</label>
+        <input type="date" name="dob" required><br>
+
+        <label>Gender:</label>
+        <select name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br>
+
+        <!-- Contact Information Section -->
+        <h3>Contact Information</h3>
+        <label>Email:</label>
+        <input type="email" placeholder="Enter your email" name="email" required><br>
+
+        <label>Phone Number:</label>
+        <input type="tel" placeholder="Enter your phone number" name="phone" required><br>
+
+        <label>Address:</label>
+        <textarea placeholder="Enter your address" name="address" required></textarea><br>
+
+        <!-- Educational Background Section -->
+        <h3>Educational Background</h3>
+        <label>High School GPA:</label>
+        <input type="number" step="0.01" placeholder="Enter your high school GPA" name="gpa" required><br>
+
+        <label>High School Transcript:</label>
+        <input type="file" name="transcript" accept=".pdf, .doc, .docx" required><br>
+
+        <!-- Program Choice Section -->
+        <h3>Program Choice</h3>
+        <label>Desired Program:</label>
+        <input type="text" placeholder="Enter your desired program" name="program" required><br>
+
+        <label>Intended Start Date:</label>
+        <input type="date" name="start_date" required><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit Application</button>
+    </form>
+</body>
+</html>
